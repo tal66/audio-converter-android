@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragment.RecorderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/stop_rec"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.459"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/infoTextView"
+                app:layout_constraintVertical_bias="0.833" />
+
+            <Button
+                android:id="@+id/stop_rec"
+                android:layout_width="58dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="204dp"
+                android:background="@drawable/ic_baseline_stop_24"
+                app:layout_constraintBottom_toTopOf="@+id/rec_guideline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.62"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/start_record"
+                android:layout_width="54dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="112dp"
+                android:layout_marginBottom="204dp"
+                android:background="@drawable/ic_baseline_mic_24"
+                app:layout_constraintBottom_toTopOf="@+id/rec_guideline"
+                app:layout_constraintEnd_toStartOf="@+id/stop_rec"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/rec_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="458dp" />
+
+            <TextView
+                android:id="@+id/infoTextView"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_marginBottom="332dp"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/rec_guideline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.8" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

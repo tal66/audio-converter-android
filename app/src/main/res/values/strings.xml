@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Audio Converter</string>
+    <string name="status_playing">player status: playing</string>
+    <string name="status_stopped">player status: stopped</string>
+    <string name="my_files">my files</string>
+    <string name="my_recordings">my recordings</string>
+    <string name="recorder">Recorder</string>
+    <string name="player">Player</string>
+    <string name="description">description</string>
+    <string name="duration">duration</string>
+    <string name="title">title</string>
+    <string name="upload">upload…</string>
+    <string name="text_from_record_headline">Text from recording:</string>
+    <string name="permissions_denied_text">Some permissions were denied. The app won\'t work properly</string>
+    <string name="start_recording_text">started recording to file: %1$s</string>
+    <string name="saved_recording_text">saved as: %1$s</string>
+    <string name="file_info_text">File: %1$s\n\nDuration: %2$s</string>
+    <string name="player_failed">player failed  %1$s</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/filesListFragment"
+        android:icon="@drawable/ic_folder"
+        android:title="My Files"
+    />
+    <item
+        android:id="@+id/recorderFragment"
+        android:icon="@drawable/ic_baseline_mic_24"
+        android:title="Recorder"
+        />
+
+</menu>

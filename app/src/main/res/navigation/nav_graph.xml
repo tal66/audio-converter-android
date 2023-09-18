@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/filesListFragment">
+
+    <fragment
+        android:id="@+id/filesListFragment"
+        android:name="com.example.myapplication.presentation.fragment.FilesListFragment"
+        android:label="fragment_files_list"
+        tools:layout="@layout/fragment_files_list" >
+        <action
+            android:id="@+id/action_filesListFragment_to_fileInfoFragment"
+            app:destination="@id/fileInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recorderFragment"
+        android:name="com.example.myapplication.presentation.fragment.RecorderFragment"
+        android:label="fragment_recorder"
+        tools:layout="@layout/fragment_recorder" />
+    <fragment
+        android:id="@+id/fileInfoFragment"
+        android:name="com.example.myapplication.presentation.fragment.FileInfoFragment"
+        android:label="fragment_file_info"
+        tools:layout="@layout/fragment_file_info" >
+        <argument
+            android:name="filedata"
+            app:argType="com.example.myapplication.domain.FileModel"
+            app:nullable="true" />
+    </fragment>
+</navigation>
