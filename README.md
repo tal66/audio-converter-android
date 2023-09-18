@@ -4,8 +4,8 @@ Record audio and convert it to text and/or image.
 
 - 3 screens:
   - list of audio files and recordings (RecyclerView)
-  - audio player
-  - audio conversion (results via polling)
+  - audio recorder
+  - audio conversion (results via polling) and audio player
 - UI: default theme
 
 Repo includes android side. Backend on AWS (external url's not in repo).
